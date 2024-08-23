@@ -39,6 +39,8 @@ spec:
           value: image-crunchy-upgrade
         - name: RELATED_IMAGE_STANDALONE_PGADMIN
           value: image-pgadmin
+        - name: PGO_FEATURE_GATES
+          value: "AutoCreateUserSchema=true"
         securityContext:
           seccompProfile:
             type: RuntimeDefault
